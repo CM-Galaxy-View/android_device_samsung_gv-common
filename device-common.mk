@@ -15,12 +15,12 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/samsung/exynos7580-common
+LOCAL_PATH := device/samsung/gv-common
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += device/samsung/exynos7580-common/overlay
+DEVICE_PACKAGE_OVERLAYS += device/samsung/gv-common/overlay
 
 # Permissions
 PRODUCT_COPY_FILES += \

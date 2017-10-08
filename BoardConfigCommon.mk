@@ -15,7 +15,7 @@
 # limitations under the License.
 #
 
-VENDOR_PATH := device/samsung/exynos7580-common
+VENDOR_PATH := device/samsung/gv-common
 
 BOARD_VENDOR := samsung
 
@@ -115,7 +115,7 @@ CHARGING_ENABLED_PATH := /sys/class/power_supply/battery/batt_lp_charging
 
 # SELinux
 BOARD_SEPOLICY_DIRS := \
-	device/samsung/exynos7580-common/sepolicy
+	device/samsung/gv-common/sepolicy
 
 # Wifi
 BOARD_HAVE_SAMSUNG_WIFI          := true

@@ -1,5 +1,6 @@
 #
 # Copyright (C) 2016 The CyanogenMod Project
+# Copyright (C) 2017 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -22,8 +23,6 @@ BOARD_VENDOR := samsung
 TARGET_SPECIFIC_HEADER_PATH := $(VENDOR_PATH)/include
 
 # CPU
-TARGET_GLOBAL_CFLAGS += -mfpu=neon -mfloat-abi=softfp
-TARGET_GLOBAL_CPPFLAGS += -mfpu=neon -mfloat-abi=softfp
 TARGET_ARCH := arm
 TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
@@ -88,7 +87,6 @@ TARGET_POWERHAL_VARIANT := samsung
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
-KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/aarch64/aarch64-linux-android-4.9/bin
 BOARD_KERNEL_BASE := 0x10000000
 BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_KERNEL_PAGESIZE := 2048
@@ -106,11 +104,6 @@ TARGET_SLSI_VARIANT := cm
 TARGET_SYSTEM_PROP := $(VENDOR_PATH)/system.prop
 
 # Recovery
-BOARD_HAS_NO_SELECT_BUTTON := true
-BOARD_HAS_LARGE_FILESYSTEM := true
-BOARD_HAS_NO_MISC_PARTITION := true
-BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_23x41.h\"
-BOARD_SUPPRESS_SECURE_ERASE := true
 BOARD_HAS_DOWNLOAD_MODE := true
 
 # Charger/Healthd

@@ -1,15 +1,8 @@
-# Audio
-af.fast_track_multiplier=1
-audio_hal.disable_two_mic=true
-
 # Camera
 camera2.portability.force_api=1
 
 # Exynos
 debug.hwc.force_gpu=1
-
-# Wifi
-wifi.interface=wlan0
 
 # misc
 ro.chipname=exynos7580
